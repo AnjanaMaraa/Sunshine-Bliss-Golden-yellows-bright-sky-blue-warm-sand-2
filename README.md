@@ -1,4 +1,4 @@
-# Raju & Aishu — Digital Wedding Invitation
+# Vikram & Ananya — Digital Wedding Invitation
 
 A premium, romantic, interactive digital wedding invitation built with
 **vanilla HTML5, CSS3 and JavaScript only** — no frameworks, no build step.

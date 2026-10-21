@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Raju & Aishu — Wedding Invitation Configuration
+   Vikram & Ananya — Wedding Invitation Configuration
    --------------------------------------------------------------------------
    EVERY editable detail of this invitation lives in this file.
    Edit the values below — no other script needs to change.
@@ -13,8 +13,8 @@
 
 const invitationData = {
   couple: {
-    groom: "Raju",
-    bride: "Aishu"
+    groom: "Vikram",
+    bride: "Ananya"
   },
 
   wedding: {
@@ -123,7 +123,7 @@ const invitationData = {
   },
 
   footer: {
-    couple: "", // auto: "Raju & Aishu" when empty
+    couple: "", // auto: "Vikram & Ananya" when empty
     thankYou: "Thank you for being part of our story.",
     credit: "Website developed by Digimaraa Technologies",
     creditUrl: "https://digimaraa.com"
