@@ -1,0 +1,174 @@
+/* ==========================================================================
+   responsive.css — mobile-first breakpoints
+   Base styles in style.css target small screens; this file scales up
+   and trims down for extreme sizes.
+   ========================================================================== */
+
+/* ---------- Small phones (≤ 380px) ---------- */
+@media (max-width: 380px) {
+  .hero__names {
+    font-size: clamp(2.9rem, 15vw, 3.6rem);
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .countdown {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .entrance__tag {
+    min-width: 84vw;
+    padding: 1.8rem 1.4rem 1.4rem;
+  }
+
+  .entrance__bow {
+    width: 130px;
+  }
+
+  .float-btn {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* ---------- Short viewports (landscape phones) ---------- */
+@media (max-height: 520px) {
+  .entrance__bow {
+    width: 110px;
+  }
+
+  .entrance__tag {
+    padding: 1.2rem 1.6rem 1rem;
+    min-width: min(60vw, 260px);
+  }
+
+  .entrance__tap-hint {
+    margin-top: 0.7rem;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 4.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+/* ---------- Large phones / small tablets (≥ 560px) ---------- */
+@media (min-width: 560px) {
+  .scratch__under {
+    min-height: 300px;
+  }
+
+  .float-btn {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+/* ---------- Tablets (≥ 720px) ---------- */
+@media (min-width: 720px) {
+  .section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .hero {
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+  }
+
+  .rsvp-form {
+    padding: 3rem 3.4rem;
+  }
+
+  .field--radio {
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 0.9rem;
+  }
+
+  .field--radio .field__label {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .field--radio .field__error {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+}
+
+/* ---------- Desktop timeline: elegant alternating layout (≥ 900px) ---------- */
+@media (min-width: 900px) {
+  .timeline {
+    max-width: 48rem;
+  }
+
+  .timeline::before {
+    left: 50%;
+    transform: translateX(-1px);
+  }
+
+  .timeline__item {
+    width: 50%;
+    padding-left: 0;
+    padding-right: 3.6rem;
+    text-align: right;
+  }
+
+  .timeline__item .timeline__node {
+    left: auto;
+    right: -20px;
+  }
+
+  .timeline__item:nth-child(even) {
+    margin-left: 50%;
+    padding-right: 0;
+    padding-left: 3.6rem;
+    text-align: left;
+  }
+
+  .timeline__item:nth-child(even) .timeline__node {
+    right: auto;
+    left: -20px;
+  }
+}
+
+/* ---------- Desktop refinements (≥ 1024px) ---------- */
+@media (min-width: 1024px) {
+  .hero__message {
+    font-size: 1.18rem;
+  }
+
+  .scratch__frame {
+    padding: 18px;
+  }
+
+  .float-controls {
+    right: 1.6rem;
+    bottom: 1.6rem;
+  }
+}
+
+/* ---------- Print: reveal everything, drop motion & overlays ---------- */
+@media print {
+  .entrance,
+  .float-controls,
+  .hero__scroll,
+  .hero__petals {
+    display: none !important;
+  }
+
+  .reveal,
+  .reveal-stagger > * {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  body {
+    background: #fff;
+  }
+}

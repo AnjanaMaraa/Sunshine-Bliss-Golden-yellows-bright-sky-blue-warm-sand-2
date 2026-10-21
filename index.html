@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Raju &amp; Aishu | Wedding Invitation</title>
+  <meta name="description" content="Join Raju and Aishu as they celebrate their special day. Explore their digital wedding invitation and share your wishes.">
+  <link rel="canonical" href="https://example.com/raju-aishu/"><!-- REPLACE with final URL -->
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#086788">
+  <meta name="author" content="Digimaraa Technologies">
+  <meta name="keywords" content="Raju, Aishu, wedding invitation, 16 August 2024, digital wedding invite, save the date">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Raju &amp; Aishu Wedding Invitation">
+  <meta property="og:title" content="Raju &amp; Aishu | Wedding Invitation">
+  <meta property="og:description" content="Join Raju and Aishu as they celebrate their special day. Explore their digital wedding invitation and share your wishes.">
+  <meta property="og:url" content="https://example.com/raju-aishu/"><!-- REPLACE -->
+  <meta property="og:image" content="https://example.com/assets/images/hero-placeholder.jpg"><!-- REPLACE -->
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Raju &amp; Aishu | Wedding Invitation">
+  <meta name="twitter:description" content="Join Raju and Aishu as they celebrate their special day. Explore their digital wedding invitation and share your wishes.">
+  <meta name="twitter:image" content="https://example.com/assets/images/hero-placeholder.jpg"><!-- REPLACE -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Gate animations/overlay rendering on JS availability -->
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
+
+  <!-- Event structured data: only verified facts (names + date). Venue and
+       time are intentionally omitted until confirmed. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Wedding of Raju & Aishu",
+    "startDate": "2024-08-16",
+    "description": "Raju and Aishu invite you to celebrate their wedding."
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#hero">Skip to invitation</a>
+
+  <!-- ============================================================
+       ENTRANCE CURTAIN (Feature A)
+       ============================================================ -->
+  <div class="entrance is-active" id="entrance" data-state="idle"
+       role="dialog" aria-modal="true" aria-label="Wedding invitation cover" hidden>
+    <div class="entrance__panel entrance__panel--left" aria-hidden="true">
+      <span class="entrance__fold"></span><span class="entrance__fold"></span>
+      <span class="entrance__fold"></span><span class="entrance__fold"></span>
+      <span class="entrance__trim"></span>
+    </div>
+    <div class="entrance__panel entrance__panel--right" aria-hidden="true">
+      <span class="entrance__fold"></span><span class="entrance__fold"></span>
+      <span class="entrance__fold"></span><span class="entrance__fold"></span>
+      <span class="entrance__trim"></span>
+    </div>
+
+    <button class="entrance__trigger" id="entranceTrigger" type="button"
+            aria-label="Tap to open the wedding invitation of Raju and Aishu">
+      <span class="entrance__sprig entrance__sprig--tl" aria-hidden="true"></span>
+      <span class="entrance__sprig entrance__sprig--tr" aria-hidden="true"></span>
+      <span class="entrance__sprig entrance__sprig--bl" aria-hidden="true"></span>
+      <span class="entrance__sprig entrance__sprig--br" aria-hidden="true"></span>
+
+      <span class="entrance__bow" aria-hidden="true">
+        <svg viewBox="0 0 220 150" role="presentation" focusable="false">
+          <use href="#bow-svg"></use>
+        </svg>
+      </span>
+
+      <span class="entrance__tag">
+        <span class="entrance__tag-hole" aria-hidden="true"></span>
+        <span class="entrance__tag-names" id="entranceNames">Raju &amp; Aishu</span>
+        <span class="entrance__tag-rule" aria-hidden="true"></span>
+        <span class="entrance__tag-cta" id="entranceCta">Tap to Open</span>
+      </span>
+
+      <span class="entrance__tap-hint" aria-hidden="true">Tap anywhere to open</span>
+    </button>
+
+    <div class="entrance__petals" id="entrancePetals" aria-hidden="true"></div>
+  </div>
+
+  <!-- ============================================================
+       SVG DEFINITIONS (ornaments reused across the page)
+       ============================================================ -->
+  <svg class="svg-defs" aria-hidden="true" focusable="false" width="0" height="0">
+    <defs>
+      <!-- Decorative bow -->
+      <symbol id="bow-svg" viewBox="0 0 220 150">
+        <g fill="none" stroke="#8f1210" stroke-width="1.5">
+          <path d="M110 62 C 70 20 18 26 20 62 C 22 96 78 92 110 66 Z" fill="#dd1c1a"/>
+          <path d="M110 62 C 150 20 202 26 200 62 C 198 96 142 92 110 66 Z" fill="#c31614"/>
+          <path d="M96 70 C 84 98 74 122 58 142 L 96 128 C 104 108 108 90 110 76 Z" fill="#dd1c1a"/>
+          <path d="M124 70 C 136 98 146 122 162 142 L 124 128 C 116 108 112 90 110 76 Z" fill="#c31614"/>
+          <ellipse cx="110" cy="66" rx="17" ry="14" fill="#dd1c1a"/>
+          <path d="M103 60 q7 -6 14 0" stroke="#f0c808" stroke-width="2.5" fill="none"/>
+        </g>
+      </symbol>
+
+      <!-- Small botanical sprig -->
+      <symbol id="sprig-svg" viewBox="0 0 120 120">
+        <g fill="none" stroke="#086788" stroke-width="2" stroke-linecap="round">
+          <path d="M10 110 C 40 90 70 60 108 22"/>
+          <path d="M34 88 q-16 -6 -20 -22 q18 2 24 16" fill="#06aed5" fill-opacity=".55" stroke="none"/>
+          <path d="M56 66 q-4 -18 8 -28 q10 14 2 28" fill="#06aed5" fill-opacity=".55" stroke="none"/>
+          <path d="M78 44 q14 -10 30 -8 q-8 16 -26 16" fill="#06aed5" fill-opacity=".55" stroke="none"/>
+          <circle cx="104" cy="18" r="7" fill="#f0c808" stroke="none"/>
+          <circle cx="104" cy="18" r="2.6" fill="#dd1c1a" stroke="none"/>
+        </g>
+      </symbol>
+
+      <!-- Ornamental divider -->
+      <symbol id="divider-svg" viewBox="0 0 240 24">
+        <g fill="none" stroke="#f0c808" stroke-width="1.6" stroke-linecap="round">
+          <path d="M6 12 H 88"/>
+          <path d="M152 12 H 234"/>
+          <path d="M120 3 l8 9 -8 9 -8 -9 Z" fill="#f0c808" stroke="none"/>
+          <circle cx="98" cy="12" r="3" fill="#086788" stroke="none"/>
+          <circle cx="142" cy="12" r="3" fill="#086788" stroke="none"/>
+        </g>
+      </symbol>
+
+      <!-- Heart -->
+      <symbol id="heart-svg" viewBox="0 0 24 24">
+        <path d="M12 21 C 5 15 2 11 2 7.5 A 5.5 5.5 0 0 1 12 5 A 5.5 5.5 0 0 1 22 7.5 C 22 11 19 15 12 21 Z" fill="#dd1c1a"/>
+      </symbol>
+
+      <!-- Heart silhouette for the scratch card (objectBoundingBox units
+           so it scales responsively with the card) -->
+      <clipPath id="heart-clip" clipPathUnits="objectBoundingBox">
+        <path d="M0.5,0.95 C0.2,0.7 0,0.5 0,0.3 C0,0.12 0.15,0.02 0.3,0.02 C0.4,0.02 0.47,0.08 0.5,0.15 C0.53,0.08 0.6,0.02 0.7,0.02 C0.85,0.02 1,0.12 1,0.3 C1,0.5 0.8,0.7 0.5,0.95 Z"/>
+      </clipPath>
+    </defs>
+  </svg>
+
+  <main id="main">
+    <!-- HERO + sections injected/anchored below -->
+    <div id="pageContent">
+      <!-- ============================================================
+           HERO SECTION
+           ============================================================ -->
+      <section class="hero" id="hero" aria-labelledby="heroNames">
+        <div class="hero__media">
+          <!-- REPLACE HERO IMAGE HERE: assets/images/hero-placeholder.jpg
+               (path is controlled by invitationData.hero.image) -->
+          <img class="hero__image" id="heroImage"
+               src="assets/images/hero-placeholder.jpg"
+               alt="Elegant wedding celebration setting with flowers and candles"
+               fetchpriority="high" decoding="async">
+          <span class="hero__veil" aria-hidden="true"></span>
+        </div>
+
+        <div class="hero__content">
+          <p class="hero__eyebrow reveal">Together, forever begins</p>
+          <h1 class="hero__names reveal" id="heroNames">
+            <span id="heroGroom">Raju</span>
+            <span class="hero__amp" aria-hidden="true">&amp;</span>
+            <span id="heroBride">Aishu</span>
+          </h1>
+          <p class="hero__message reveal">
+            Two hearts, one beautiful journey. Join us as we celebrate our
+            special day.
+          </p>
+          <span class="ornament ornament--divider reveal" aria-hidden="true">
+            <svg viewBox="0 0 240 24" focusable="false"><use href="#divider-svg"></use></svg>
+          </span>
+          <p class="hero__date reveal">
+            <time id="heroDate" datetime="2024-08-16">16 August 2024</time>
+            <span class="hero__weekday" id="heroWeekday">&middot; Friday</span>
+          </p>
+          <div class="hero__actions reveal">
+            <a class="btn btn--solid" href="#invitation">Discover Our Invitation</a>
+            <a class="btn btn--ghost" href="#rsvp">Celebrate With Us</a>
+          </div>
+        </div>
+
+        <div class="hero__petals" id="heroPetals" aria-hidden="true"></div>
+        <div class="hero__scroll" aria-hidden="true"><span></span></div>
+      </section>
+
+      <!-- ============================================================
+           SCRATCH TO REVEAL (Feature B)
+           ============================================================ -->
+      <section class="section scratch-section" id="save-the-date" aria-labelledby="scratchHeading">
+        <div class="section__bg" aria-hidden="true"></div>
+        <header class="section__head">
+          <p class="section__eyebrow reveal">A little surprise</p>
+          <h2 class="section__title reveal" id="scratchHeading">Scratch to Reveal</h2>
+          <p class="section__sub reveal">You&rsquo;re Invited!</p>
+        </header>
+
+        <div class="scratch reveal" id="scratch">
+          <div class="scratch__stack">
+            <div class="scratch__frame">
+              <div class="scratch__card">
+              <div class="scratch__under">
+                <p class="scratch__under-eyebrow">Save our date</p>
+                <p class="scratch__under-names" id="scratchNames">Raju &amp; Aishu</p>
+                <span class="ornament ornament--mini" aria-hidden="true">
+                  <svg viewBox="0 0 240 24" focusable="false"><use href="#divider-svg"></use></svg>
+                </span>
+                <p class="scratch__under-date">
+                  <time id="scratchDate" datetime="2024-08-16">16 August 2024</time>
+                </p>
+                <p class="scratch__under-weekday" id="scratchWeekday">Friday</p>
+                <p class="scratch__under-time" id="scratchTime" hidden></p>
+              </div>
+              <canvas class="scratch__canvas" id="scratchCanvas"
+                      role="img"
+                      aria-label="Scratch card concealing the wedding date of Raju and Aishu"></canvas>
+              </div>
+            </div>
+          </div>
+          <button class="scratch__reveal-btn" id="scratchRevealBtn" type="button">
+            Reveal Invitation
+          </button>
+          <p class="scratch__status" id="scratchStatus" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           INVITATION INTRODUCTION
+           ============================================================ -->
+      <section class="section invitation" id="invitation" aria-labelledby="invitationNames">
+        <!-- Hindu wedding backdrop: jaimala (garland exchange) ritual photo -->
+        <div class="bg-plate bg-plate--jaimala" aria-hidden="true"></div>
+        <div class="paper-card reveal">
+          <span class="paper-card__corner paper-card__corner--tl" aria-hidden="true"></span>
+          <span class="paper-card__corner paper-card__corner--tr" aria-hidden="true"></span>
+          <span class="paper-card__corner paper-card__corner--bl" aria-hidden="true"></span>
+          <span class="paper-card__corner paper-card__corner--br" aria-hidden="true"></span>
+
+          <p class="invitation__families">Together with our families</p>
+          <h2 class="invitation__names" id="invitationNames">
+            <span id="introGroom">Raju</span>
+            <span class="hero__amp" aria-hidden="true">&amp;</span>
+            <span id="introBride">Aishu</span>
+          </h2>
+          <span class="ornament ornament--divider" aria-hidden="true">
+            <svg viewBox="0 0 240 24" focusable="false"><use href="#divider-svg"></use></svg>
+          </span>
+          <p class="invitation__message">
+            We joyfully invite you to celebrate our wedding and share in the
+            beginning of our new journey together.
+          </p>
+          <p class="invitation__date">
+            <span class="invitation__date-label">Wedding Date</span>
+            <time id="introDate" datetime="2024-08-16">16 August 2024</time>
+            <span id="introWeekday">Friday</span>
+          </p>
+          <p class="invitation__time" id="introTime" hidden></p>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           COUNTDOWN
+           ============================================================ -->
+      <section class="section countdown-section" id="countdown" aria-labelledby="countdownHeading">
+        <!-- Hindu wedding backdrop: glowing diyas -->
+        <div class="bg-plate bg-plate--diya" aria-hidden="true"></div>
+        <header class="section__head">
+          <p class="section__eyebrow reveal">The wait is beautiful</p>
+          <h2 class="section__title reveal" id="countdownHeading">Counting Down to Forever</h2>
+        </header>
+
+        <div class="countdown" id="countdownGrid" hidden>
+          <div class="countdown__cell reveal">
+            <span class="countdown__num" id="cdDays">00</span>
+            <span class="countdown__label">Days</span>
+          </div>
+          <div class="countdown__cell reveal">
+            <span class="countdown__num" id="cdHours">00</span>
+            <span class="countdown__label">Hours</span>
+          </div>
+          <div class="countdown__cell reveal">
+            <span class="countdown__num" id="cdMinutes">00</span>
+            <span class="countdown__label">Minutes</span>
+          </div>
+          <div class="countdown__cell reveal">
+            <span class="countdown__num" id="cdSeconds">00</span>
+            <span class="countdown__label">Seconds</span>
+          </div>
+        </div>
+
+        <div class="countdown__past reveal" id="countdownPast" hidden>
+          <span class="ornament ornament--mini" aria-hidden="true">
+            <svg viewBox="0 0 240 24" focusable="false"><use href="#divider-svg"></use></svg>
+          </span>
+          <p class="countdown__past-title">Celebrating the Memories</p>
+          <p class="countdown__past-sub" id="countdownPastDate">
+            Our special day &mdash; 16 August 2024
+          </p>
+          <span class="ornament ornament--mini" aria-hidden="true">
+            <svg viewBox="0 0 240 24" focusable="false"><use href="#divider-svg"></use></svg>
+          </span>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           PROGRAM TIMELINE (rendered from invitationData.events)
+           ============================================================ -->
+      <section class="section timeline-section" id="celebration" aria-labelledby="timelineHeading">
+        <!-- Hindu wedding backdrop: marigold garlands -->
+        <div class="bg-plate bg-plate--marigold" aria-hidden="true"></div>
+        <header class="section__head">
+          <p class="section__eyebrow reveal">The day we say forever</p>
+          <h2 class="section__title reveal" id="timelineHeading">Our Wedding Celebration</h2>
+        </header>
+        <ol class="timeline" id="timeline"></ol>
+      </section>
+
+      <!-- ============================================================
+           OPTIONAL SECTIONS — hidden until configured in
+           js/invitation-data.js (venue / dressCode / preWeddingEvents /
+           transportation / accommodation)
+           ============================================================ -->
+      <section class="section venue-section" id="venue" aria-labelledby="venueHeading" hidden>
+        <header class="section__head">
+          <p class="section__eyebrow">Where we gather</p>
+          <h2 class="section__title" id="venueHeading">Wedding Venue</h2>
+        </header>
+        <div class="venue reveal" id="venueMount"></div>
+      </section>
+
+      <section class="section dresscode-section" id="dress-code" aria-labelledby="dressHeading" hidden>
+        <header class="section__head">
+          <p class="section__eyebrow reveal">Dress to celebrate</p>
+          <h2 class="section__title reveal" id="dressHeading">Dress Code</h2>
+        </header>
+        <div class="dresscode" id="dresscodeMount"></div>
+      </section>
+
+      <section class="section pre-wedding-section" id="pre-wedding" aria-labelledby="preHeading" hidden>
+        <header class="section__head">
+          <p class="section__eyebrow reveal">Leading up to the big day</p>
+          <h2 class="section__title reveal" id="preHeading">Pre-Wedding Celebrations</h2>
+        </header>
+        <div class="pre-wedding" id="preWeddingMount"></div>
+      </section>
+
+      <section class="section transport-section" id="getting-there" aria-labelledby="transportHeading" hidden>
+        <header class="section__head">
+          <p class="section__eyebrow reveal">Plan your journey</p>
+          <h2 class="section__title reveal" id="transportHeading">Getting There</h2>
+        </header>
+        <div class="transport" id="transportMount"></div>
+      </section>
+
+      <section class="section stay-section" id="accommodation" aria-labelledby="stayHeading" hidden>
+        <header class="section__head">
+          <p class="section__eyebrow reveal">Rest &amp; relaxation</p>
+          <h2 class="section__title reveal" id="stayHeading">Accommodation</h2>
+        </header>
+        <div class="stay" id="stayMount"></div>
+      </section>
+
+      <!-- ============================================================
+           GIFTS
+           ============================================================ -->
+      <section class="section gifts-section" id="gifts" aria-labelledby="giftsHeading">
+        <!-- Hindu wedding backdrop: rangoli with diyas -->
+        <div class="bg-plate bg-plate--rangoli" aria-hidden="true"></div>
+        <div class="paper-card paper-card--gift reveal">
+          <span class="gifts__heart" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false"><use href="#heart-svg"></use></svg>
+          </span>
+          <h2 class="section__title" id="giftsHeading">A Gift From the Heart</h2>
+          <span class="ornament ornament--divider" aria-hidden="true">
+            <svg viewBox="0 0 240 24" focusable="false"><use href="#divider-svg"></use></svg>
+          </span>
+          <p class="gifts__message" id="giftsMessage">
+            Your love, blessings, and presence are the greatest gifts we could
+            ever ask for.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           RSVP
+           ============================================================ -->
+      <section class="section rsvp-section" id="rsvp" aria-labelledby="rsvpHeading">
+        <header class="section__head">
+          <p class="section__eyebrow reveal">Let us know</p>
+          <h2 class="section__title reveal" id="rsvpHeading">RSVP</h2>
+          <p class="section__sub reveal">
+            We would love to celebrate this special moment with you.
+          </p>
+        </header>
+
+        <form class="rsvp-form reveal" id="rsvpForm" novalidate>
+          <div class="field">
+            <label class="field__label" for="rsvpName">Your Name</label>
+            <input class="field__input" type="text" id="rsvpName" name="name"
+                   autocomplete="name" required aria-required="true"
+                   aria-describedby="rsvpNameError">
+            <p class="field__error" id="rsvpNameError" hidden></p>
+          </div>
+
+          <fieldset class="field field--radio" aria-describedby="rsvpAttendError">
+            <legend class="field__label">Will you be attending?</legend>
+            <label class="radio">
+              <input type="radio" name="attendance" value="yes" required
+                     aria-describedby="rsvpAttendError">
+              <span class="radio__box" aria-hidden="true"></span>
+              <span class="radio__text">Yes, I&rsquo;ll be there!</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="attendance" value="no"
+                     aria-describedby="rsvpAttendError">
+              <span class="radio__box" aria-hidden="true"></span>
+              <span class="radio__text">No, I can&rsquo;t make it.</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="attendance" value="maybe"
+                     aria-describedby="rsvpAttendError">
+              <span class="radio__box" aria-hidden="true"></span>
+              <span class="radio__text">Maybe</span>
+            </label>
+            <p class="field__error" id="rsvpAttendError" hidden></p>
+          </fieldset>
+
+          <div class="field">
+            <label class="field__label" for="rsvpMessage">
+              Your Message <span class="field__optional">(optional)</span>
+            </label>
+            <textarea class="field__input field__input--area" id="rsvpMessage"
+                      name="message" rows="4" placeholder="Write your wishes..."
+                      aria-describedby="rsvpMessageHint"></textarea>
+            <p class="field__hint" id="rsvpMessageHint">Share your blessings with the couple.</p>
+          </div>
+
+          <button class="btn btn--solid rsvp-form__submit" id="rsvpSubmit" type="submit">
+            Send RSVP
+          </button>
+
+          <p class="rsvp-form__status" id="rsvpStatus" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <!-- ============================================================
+           CLOSING / FOOTER
+           ============================================================ -->
+      <footer class="footer" id="footer">
+        <!-- Hindu wedding backdrop: bridal mehndi -->
+        <div class="bg-plate bg-plate--mehndi" aria-hidden="true"></div>
+        <div class="footer__inner reveal">
+          <p class="footer__names" id="footerNames">Raju &amp; Aishu</p>
+          <span class="ornament ornament--divider" aria-hidden="true">
+            <svg viewBox="0 0 240 24" focusable="false"><use href="#divider-svg"></use></svg>
+          </span>
+          <p class="footer__thanks" id="footerThanks">
+            Thank you for being part of our story.
+          </p>
+          <p class="footer__credit">
+            <a href="https://digimaraa.com" target="_blank" rel="noopener noreferrer"
+               id="footerCredit">Website developed by Digimaraa Technologies</a>
+          </p>
+        </div>
+      </footer>
+    </div><!-- /#pageContent -->
+
+    <!-- ============================================================
+         FLOATING CONTROLS
+         ============================================================ -->
+    <div class="float-controls" id="floatControls">
+      <button class="float-btn float-btn--music" id="musicToggle" type="button"
+              aria-pressed="false" aria-label="Play background music" hidden>
+        <span class="float-btn__icon" aria-hidden="true">&#9835;</span>
+      </button>
+      <a class="float-btn float-btn--rsvp" id="rsvpShortcut" href="#rsvp"
+         aria-label="Jump to RSVP section">RSVP</a>
+      <button class="float-btn float-btn--top" id="backToTop" type="button"
+              aria-label="Back to top" hidden>
+        <span class="float-btn__icon" aria-hidden="true">&#8593;</span>
+      </button>
+    </div>
+    </div>
+  </main>
+
+  <script src="js/invitation-data.js" defer></script>
+  <script src="js/entrance.js" defer></script>
+  <script src="js/scratch.js" defer></script>
+  <script src="js/countdown.js" defer></script>
+  <script src="js/timeline.js" defer></script>
+  <script src="js/rsvp.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

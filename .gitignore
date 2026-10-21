@@ -1,0 +1,38 @@
+# ============================================
+# Raju & Aishu — Digital Wedding Invitation
+# Vanilla HTML/CSS/JS project — nothing to build,
+# everything under version control except junk.
+# ============================================
+
+# --- OS generated ---
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Editors / IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Node tooling (not used by the site, but safe if added later) ---
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+
+# --- Logs & temp ---
+*.log
+tmp/
+.cache/
+
+# --- Tool-generated output (not part of the invitation) ---
+graphify-out/
+
+# --- Local env / secrets ---
+.env
+.env.*
